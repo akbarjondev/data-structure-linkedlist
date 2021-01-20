@@ -1,3 +1,4 @@
+// SingleLinkedList
 const { LinkedList } = require('./SingleLinkedList')
 
 const ll = new LinkedList()
@@ -13,3 +14,5 @@ ll.prepend('G')
 // console.log(ll)
 console.log(ll.getSize)
 console.log(ll.displayNodes)
+
+// DoublyLinkedList

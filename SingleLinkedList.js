@@ -54,10 +54,8 @@ class LinkedList {
 	}
 
 	prepend(data) {
-		const newNode = new Node(data)
-
-		newNode.pointer = this.head
-		this.head = newNode
+		[ this.head, this.head.pointer ] = [ new Node(data), this.head ]
+		
 		this.#size++
 	}
 }
