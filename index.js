@@ -21,13 +21,13 @@ class LinkedList {
 	insert(data) {
 
 		const node = new Node(data)
-		
+
 		if(!this.head) {
 			
 			this.head = node
 		
 		} else {
-			
+
 			let tail = this.head
 
 			while(tail.pointer) {
@@ -37,10 +37,8 @@ class LinkedList {
 			}
 
 			tail.pointer = node
-		
 		}
 	}
-
 }
 
 const ll = new LinkedList()
@@ -50,4 +48,4 @@ ll.insert('B')
 ll.insert('C')
 ll.insert('D')
 
-console.log(ll.head.pointer)
+console.log(ll)
