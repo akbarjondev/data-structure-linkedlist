@@ -12,7 +12,24 @@ ll.prepend('F')
 ll.prepend('G')
 
 // console.log(ll)
-console.log(ll.getSize)
-console.log(ll.displayNodes)
+// console.log(ll.getSize)
+// console.log(ll.displayNodes)
 
-// DoublyLinkedList
+
+// for(let d of new LinkedList) {
+// 	console.log(d)
+// }
+
+// console.log(...new LinkedList)
+
+
+// CircularLinkedList
+// const { CircularLinkedList } = require('./CircularLinkedList')
+// 
+// const dll = new CircularLinkedList()
+// 
+// dll.insert('A')
+// dll.insert('B')
+// dll.insert('C')
+// 
+// console.log(dll)
