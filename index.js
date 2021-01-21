@@ -1,15 +1,35 @@
-// SingleLinkedList
-const { LinkedList } = require('./SingleLinkedList')
+//****** CircularLinkedList ******//
+const { CircularLinkedList } = require('./CircularLinkedList')
 
-const ll = new LinkedList()
+const cll = new CircularLinkedList()
 
-ll.insert('A')
-ll.insert('B')
-ll.insert('C')
-ll.insert('D')
+cll.insert('A')
+cll.insert('B')
+cll.insert('C')
+cll.insert('D')
+cll.insert('E')
+cll.insert('F')
 
-ll.prepend('F')
-ll.prepend('G')
+// console.log(cll.getSize)
+
+for(let d of cll) {
+	console.log(d)
+}
+
+
+//****** SingleLinkedList ******//
+
+// const { LinkedList } = require('./SingleLinkedList')
+// 
+// const ll = new LinkedList()
+// 
+// ll.insert('A')
+// ll.insert('B')
+// ll.insert('C')
+// ll.insert('D')
+// 
+// ll.prepend('F')
+// ll.prepend('G')
 
 // console.log(ll)
 // console.log(ll.getSize)
@@ -23,26 +43,15 @@ ll.prepend('G')
 // console.log(...new LinkedList)
 
 
-// CircularLinkedList
-// const { CircularLinkedList } = require('./CircularLinkedList')
-// 
-// const dll = new CircularLinkedList()
+//****** DoublyLinkedList ******//
+
+// const { DoublyLinkedList } = require('./DoublyLinkedList')
+// const dll = new DoublyLinkedList()
 // 
 // dll.insert('A')
 // dll.insert('B')
 // dll.insert('C')
 // 
-// console.log(dll)
+// console.log(dll.getSize)
+// console.log(dll.head.next.next)
 
-
-// DoublyLinkedList
-
-const { DoublyLinkedList } = require('./DoublyLinkedList')
-const dll = new DoublyLinkedList()
-
-dll.insert('A')
-dll.insert('B')
-dll.insert('C')
-
-console.log(dll.getSize)
-console.log(dll.head.next.next)

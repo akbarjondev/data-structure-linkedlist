@@ -48,6 +48,30 @@ class CircularLinkedList {
 		this.#size++
 	}
 
+	get getSize() {
+		return this.#size
+	}
+
+	[Symbol.iterator]() {
+		let from = 1
+		let to = this.#size
+		let tail = this.head.prev
+
+		return {
+			next: () => {
+				
+				tail = tail.next
+
+				return {
+					value: tail.data,
+					done: from++ > to
+				}
+
+			}
+		}
+
+	}
+
 }
 
 module.exports.CircularLinkedList = CircularLinkedList
