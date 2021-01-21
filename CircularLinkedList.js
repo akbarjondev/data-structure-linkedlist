@@ -48,6 +48,37 @@ class CircularLinkedList {
 		this.#size++
 	}
 
+	next(id, howMuch = null) {
+		let last = this.head
+		let countId = 0
+
+		if(!howMuch) {
+
+			while(id !== countId) {
+				last = last.next
+				countId++
+			}
+
+			return last.data
+		} else {
+
+			let wrapper = []
+			let tail = this.head
+			let to = id + howMuch
+
+			while(countId <= to) {
+				if(id <= countId && id < (id + howMuch)) {
+					wrapper.push(tail.data)
+				}
+
+				tail = tail.next
+				countId++
+			}
+
+			return wrapper
+		}
+	}
+
 	get getSize() {
 		return this.#size
 	}
@@ -66,7 +97,6 @@ class CircularLinkedList {
 					value: tail.data,
 					done: from++ > to
 				}
-
 			}
 		}
 
