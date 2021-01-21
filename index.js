@@ -33,3 +33,16 @@ ll.prepend('G')
 // dll.insert('C')
 // 
 // console.log(dll)
+
+
+// DoublyLinkedList
+
+const { DoublyLinkedList } = require('./DoublyLinkedList')
+const dll = new DoublyLinkedList()
+
+dll.insert('A')
+dll.insert('B')
+dll.insert('C')
+
+console.log(dll.getSize)
+console.log(dll.head.next.next)
